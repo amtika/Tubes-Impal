@@ -9,6 +9,15 @@ package Model;
  *
  * @author User
  */
-public class Logistik {
+public class Logistik extends User {
+
+    public Logistik(int idPegawai, String username, String password, String nama, String jabatan) {
+        super(idPegawai, username, password, nama, jabatan);
+    }
+
+    @Override
+    public void setJabatan(String jabatan) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

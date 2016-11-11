@@ -9,6 +9,28 @@ package Model;
  *
  * @author User
  */
-public class Pengaju {
+public class Pengaju extends User {
+    private Pengajuan pengajuan;
+    private Mutasi mutasi;
+
+    public Pengaju(int idPegawai, String username, String password, String nama, String jabatan) {
+        super(idPegawai, username, password, nama, jabatan);
+    }
+
+    @Override
+    public void setJabatan(String jabatan) {
+        
+    }
+    public void tambahPengajuan(Pengajuan pengajuan){
+        
+    }
+    public void dropPengajuan(){
+        
+    }
+    public void tambahMutasi(Mutasi mutasi){
     
+    }
+    public void dropMutasi(){
+        
+    }
 }

@@ -9,6 +9,15 @@ package Model;
  *
  * @author User
  */
-public class KoorPengadaan {
+public class KoorPengadaan extends User {
+
+    public KoorPengadaan(int idPegawai, String username, String password, String nama, String jabatan) {
+        super(idPegawai, username, password, nama, jabatan);
+    }
+
+    @Override
+    public void setJabatan(String jabatan) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
